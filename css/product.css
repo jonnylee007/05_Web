@@ -1,0 +1,68 @@
+.wrappergrid {
+    width: 82%;
+    margin: 3rem auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.wrappergrid a.item {
+    display: block;
+    outline: 1px solid black;
+    height: 32rem; 
+    overflow: hidden;
+
+    position: relative;
+}
+.wrappergrid a.item h1.items {
+    background-color: white;
+    outline: 1px solid black;
+    width: 100%;
+
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+
+    text-align: right;
+}
+.wrappergrid a.item:hover h1.items {
+    background-color: black;
+    color: white;
+}
+.wrappergrid a.item h1.Top span {
+    display: block;
+    width: 100%;
+}
+.wrappergrid a.item:hover h1.Top span {
+    animation: marquee 5s linear infinite;
+}
+@keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+.wrappergrid a.item:hover img {
+    transform: scale(1.4, 1.4);
+}
+.wrappergrid a.item h1.Top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.wrappergrid a.item h1.Bottom {
+    position: absolute;
+    top: 92%;
+    left: 0;
+    z-index: 1;
+}
+.wrappergrid img {
+    width: 100%;
+
+    transition: all 1s .1s ease;
+}
+
+
+

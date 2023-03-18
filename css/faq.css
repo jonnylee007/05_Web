@@ -1,0 +1,89 @@
+.questionWrap {
+    width: 45%;
+    margin: 0 auto;
+    padding: 4rem 4rem;    
+
+
+    position: relative;
+}
+.questionWrap h1 {
+    color: var(--primary-color);
+    
+    line-height: 3rem;
+    font-size: 3rem;
+    font-weight: 900;
+
+    padding: .5rem 1.5rem;
+}
+summary {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    border-radius: 1rem;
+    
+    line-height: 3rem;
+    font-size: 2.5rem;
+    font-weight: 600;    
+    cursor: pointer;
+
+    padding: .5rem 1.5rem;
+    margin: .5rem 0;
+
+    position: relative;
+}
+details[open] summary ~ * {
+    animation: sweep .6s ease-in-out;
+}
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+}
+details > summary::after {
+    content: "+";
+    width: 2rem;
+
+    position: absolute;
+    right: 2rem;
+}
+details[open] > summary::after {
+    content: "-";
+
+
+    position: absolute;    
+    right: 2rem;
+}
+.questionWrap p {
+    height: auto;
+    padding: 1rem 2rem;
+
+    font-size: 2.2rem;
+}
+.QQ1::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: .5rem;
+    left: -2.4rem;
+
+    border: solid var(--secondary-color);;
+    border-width: 0 0 1rem 1rem;
+    border-radius: 0 0 0 5rem;
+}
+.QQ2::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: -.5rem;
+    left: 2.4rem;
+
+    border: solid var(--secondary-color);;
+    border-width: 1rem 1rem 1rem 0;
+    border-radius: 0 5rem 5rem 0;
+
+    
+}
+
+

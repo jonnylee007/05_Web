@@ -1,0 +1,235 @@
+/* ------------ 關於 ------------ */
+.gridWrap {
+    width: 82%;
+    margin: 3rem auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.gridWrap div.grid001 {   
+    grid-column: 1 / 6;
+    grid-row: 1 / 12;
+
+    position: relative;
+}
+.gridWrap div.grid001::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -1.2rem;
+    right: -1.2rem;
+    z-index: -1;
+
+    background: repeating-linear-gradient(
+        -45deg,
+        var(--secondary-color), var(--secondary-color) .5rem,
+        transparent 0rem, transparent 1rem);
+}
+.gridWrap h1.grid002 {
+    grid-column: 7 / 10;
+    grid-row: 1 / 2;
+
+    display: block;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    position: relative;
+}
+.gridWrap h1.grid002::before {
+    content: "";
+    background-color: var(--secondary-color);;    
+    width: 1rem;
+    height: 3rem;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.gridWrap p.grid003 {
+    grid-column: 7 / 10;
+    grid-row: 2 / 5;
+
+    padding-right: 3rem;
+    box-sizing: border-box;
+
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+.gridWrap p.grid003::first-letter {
+	float:  left;
+    line-height: 5rem;
+	font-size: 4rem;
+    font-weight: bold;
+	padding-right: .6rem;
+}
+.gridWrap img.grid004 {
+    grid-column: 7 / 10;
+    grid-row: 6 / 9;
+
+    border-radius: 24% 76% 28% 72% / 27% 48% 52% 73%;
+}
+.gridWrap h1.grid005 {
+    grid-column: 1 / 4;
+    grid-row: 13 / 14;
+
+    margin-left: 3rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    position: relative;
+}
+.gridWrap h1.grid005::before {
+    content: "";
+    background-color: green;    
+    width: 1rem;
+    height: 3rem;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.gridWrap p.grid006 {
+    grid-column: 1 / 4;
+    grid-row: 14 / 17;
+
+    padding-left: 3rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+.gridWrap p.grid006::first-letter {
+	float:  left;
+    line-height: 5rem;
+	font-size: 4rem;
+    font-weight: bold;
+	padding-right: .6rem;
+}
+.gridWrap img.grid007 {
+    grid-column: 1 / 4;
+    grid-row: 19 / 21;
+
+    border-radius: 88% 12% 74% 26% / 34% 34% 66% 66%;
+}
+.gridWrap div.grid008 {
+    grid-column: 5 / 10;
+    grid-row: 11 / 21;
+
+    position: relative;
+}
+.gridWrap div.grid008::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -1.4rem;
+    right: -1.4rem;
+    z-index: -1;
+
+    background-size: 1rem 1rem;
+    background-position: right top;
+    background-image: radial-gradient(var(--secondary-color) 60%, rgba(0 0 0 / 0) 61% );
+    background-repeat: repeat;
+}
+.gridWrap img {
+    width: 100%;
+}
+
+/* ------------ Timeline ------------ */
+.timelineWrap {
+    --timelineWrap-width: 82%;
+    width: var(--timelineWrap-width);
+    margin: 3rem auto 0;
+    padding: 0 8rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    position: relative;
+}
+.timelineWrap::after {
+    content: '';
+    background-color: var(--primary-color);;
+    width: 1rem;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -.5rem;                /* 用負margin讓timeline中線置中 */
+}
+.timelineWrap .content {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    flex-shrink:0;
+    width: calc(var(--timelineWrap-width) / 2.1);
+    border: 1px solid black;
+
+    padding: 1.6rem;
+    margin: 2rem;
+
+    position: relative;
+}
+.timelineWrap div.content:nth-child(2),
+.timelineWrap div.content:nth-child(3),
+.timelineWrap div.content:nth-child(6),
+.timelineWrap div.content:nth-child(7)  {
+    background-color: red;
+    opacity: 0;
+}
+.timelineWrap div.left {
+    border-right: .7rem solid var(--secondary-color);
+}
+.timelineWrap div.left::before {
+    content: '';
+    border: 1.4rem solid;
+    /* border-width: 1.4rem 1.4rem 1.4rem 1.4rem; */
+    border-color: transparent transparent transparent var(--secondary-color);
+
+    position: absolute;
+    top: 0;
+    right: -3.5rem;
+    z-index: 1;
+}
+.timelineWrap div.right {
+    border-left: .7rem solid var(--secondary-color);
+}
+.timelineWrap div.right::before {
+    content: '';
+    border: 1.4rem solid ;
+    /* border-width: 1.4rem 1.4rem 1.4rem 1.4rem; */
+    border-color: transparent var(--secondary-color) transparent transparent;
+
+    position: absolute;
+    top: 0;
+    left: -3.5rem;
+    z-index: 1;
+}
+.timelineWrap .content h1 {
+    font-size: 2.1rem;
+}
+.timelineWrap .content p {
+    font-size: 1.8rem;
+    margin-top: .6rem;
+    line-height: 2.4rem;
+}
+
+
+
+  
+
+  
+
+  
+  

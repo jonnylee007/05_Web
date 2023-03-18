@@ -1,0 +1,171 @@
+@import url('reset.css');
+
+html {
+	font-size: 62.5%;
+	--primary-color: rgb(6, 6, 6);
+	--secondary-color: rgb(245, 194, 2)
+}
+body {
+	font-family: Arial, Helvetica, sans-serif, '微軟正黑體';
+	color: var(--primary-color);
+
+}
+/* ------------ wrapper置中層 ------------ */
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	/* border: 2px solid red; */
+}
+
+/* ------------ nav導覽列 ------------ */
+nav {
+	width: 82%;
+	height: 5rem;
+	margin: 1rem auto 2rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border: .4rem double var(--primary-color);
+}
+nav img {
+	display: block;
+	width: 4rem;
+
+	margin-left: 2rem;
+}
+nav ul {
+	flex-basis: 68%;
+	height: 6rem;
+
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	margin-right: 2rem;
+}
+nav ul li {
+	line-height: 2rem;
+
+	flex-grow: 1;				/* 自行分配欄寬	*/	
+	flex-shrink:1;				/* 隨手押回來 */
+
+	margin-right: 1rem;
+	
+	list-style: none;
+	/* overflow: hidden; */
+}
+nav ul li a {
+	display: block;
+	position: relative;
+
+	text-decoration: none;
+}
+nav ul li a span {
+	display: block;
+	position: relative;
+	z-index: 0;
+
+	padding-top: 2rem;
+
+	font-size: 2.4rem;
+	font-weight: bolder;
+	color: var(--primary-color);
+}
+nav ul li a::before {
+	content: attr(data-en);
+	color: rgba(6, 6, 6, .2);
+
+	font-size: 2.2rem;
+	font-weight: 900;
+	position: absolute;
+	top: 6%;
+	left: 0;
+}
+/* ------------ nav hover ------------ */
+nav ul li:hover a{
+	background-image: linear-gradient(rgb(0, 0, 0, 0) 60%, var(--secondary-color) 99%);
+}
+/* ------------ nav active ------------ */
+nav ul li.active a{
+	background-image: linear-gradient(rgb(0, 0, 0, 0) 60%, var(--secondary-color) 99%);
+}
+
+
+
+/* ------------ footer ------------ */
+footer {
+	background: linear-gradient(100deg, var(--primary-color), transparent), url(https://grainy-gradients.vercel.app/noise.svg);	
+	filter: contrast(180%) brightness(1000%);
+	width: 100%;
+
+	margin-top: 6rem;
+	padding: 3rem 10%;
+	box-sizing: border-box;
+
+	display: flex;	
+}
+footer div {
+	color: white;
+	text-align: center;
+}
+footer div h3 {
+	font-weight: 300;
+	margin-bottom: 2rem;
+	letter-spacing: .1rem;
+}
+/* ------------ footer-col1 ------------ */
+footer div.col-1 a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 1.2rem;
+}
+/* ------------ footer-col2 ------------ */
+footer div.col-2 {
+	flex-grow: 2;
+}
+footer div.col-2 form input {
+	width: 60%;
+	height: 5rem;
+	margin: 2rem 0 4rem;
+
+	text-align: center;
+}
+footer div.col-2 form button {
+	background-color: transparent;
+	border: .2rem solid white;
+	border-radius: 3rem;
+	padding: 1rem 3rem;
+
+	color: white;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+/* ------------ footer-col3 ------------ */
+footer div.col-3 {
+	color: black;
+}
+footer div.col-3 div.social-icons{
+	margin-top: 3rem;
+}
+footer div.col-3 div.social-icons i{
+	margin: 1rem;
+	
+	font-size: 2.6rem;
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+/* ------------ scrollbar ------------ */
+::-webkit-scrollbar {
+	width: 4rem;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--primary-color);;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--secondary-color);;
+	border-radius: 2rem;
+}

@@ -1,0 +1,123 @@
+/* ------------ header動畫列 ------------ */
+.slider {
+	width: 70%;
+	height: 45rem;
+	margin: 3rem 0 0 25rem;
+	
+	position: relative;
+
+	/* overflow: hidden; */
+}
+.slider img {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	opacity: 0;
+
+	/* transition: opacity 0.5s ease-in-out; */
+}
+.slider img.active {
+	opacity: 1;
+}
+.slogan {
+	position: absolute;
+	top: 36%;
+	left: -16rem;
+
+	font-size: 5rem;
+	font-weight: bolder;
+
+	width: 18ch;				/* 含空白鍵共18個字元 */
+	animation: typing 4s steps(18), effect .6s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+
+	border-right: .4rem solid;
+}
+@keyframes typing {
+	from {
+	  width: 0;
+	}
+}
+@keyframes effect {
+	50% {
+	  border-color: transparent;
+	}
+}
+.slider-dots {
+	position: absolute;
+	top: 50%;
+	right: -2.5rem;
+	transform: translateY(-50%);
+}
+.slider-dots .slider-dot {
+	background-color: var(--primary-color);;
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	margin: 1rem 0;
+
+	cursor: pointer;
+}
+div.slider-dots span.slider-dot.active {
+	background-color: var(--secondary-color);;
+}
+
+/* ------------ section動畫列 ------------ */
+.sectionBigWrap {
+	width: 82%;
+	height: auto;
+	margin: 3rem auto 0;
+
+	display: flex;
+	align-items: flex-start;
+}
+h1.sectionCate {
+	/* background-color: var(--secondary-color);; */
+	background-image: linear-gradient(to right, rgb(0, 0, 0, 0) 26%, var(--secondary-color) 70%, rgb(0, 0, 0, 0) 80%);
+	display: block;
+	width: 5%;
+
+	font-size: 4.2rem;
+	font-weight: bolder;
+}
+div.sectionSmallWrap {
+	width: 94%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	overflow-x: scroll;					/* 長度超出容器時，可沿著x軸滾動 */
+
+	scrollbar-width: none;				/* 隱藏滾動條 */
+	-ms-overflow-style: none;				/* 隱藏 IE/Edge 滾動條 */
+
+	border: .6rem double var(--primary-color);;
+}
+div.sectionSmallWrap::-webkit-scrollbar {
+	display: none;				/* 隱藏 Chrome/Safari 滾動條 */
+}
+div.sectionSmallWrap div.sectionItem {
+	width: 55%;
+
+    flex-shrink:0;				/* 可以超出框框 */
+}
+div.sectionSmallWrap div.sectionItem img.sectionImg {
+	display: block;
+	width: 100%;
+	height: 31rem;
+
+	margin: .4rem;
+}
+div.sectionSmallWrap div.sectionItem p {
+	margin: .4rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+	text-align: center;
+}
+

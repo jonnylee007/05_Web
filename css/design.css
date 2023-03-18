@@ -1,0 +1,192 @@
+/* ------------ 流程規劃 ------------ */
+.designWrap {
+    background-image: url(../images/design_bg_001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: multiply;
+    width: 82%;
+    height: 45rem;
+    margin: 5rem auto 0;
+
+    position: relative;
+}
+.designWrap .designTitle {
+    -webkit-text-stroke: .2rem black;
+    text-shadow: .12rem .12rem 0 white;
+    color: transparent;
+
+    font-size: 4rem;
+	font-weight: 900;
+    font-style: italic;
+
+    position: absolute;
+	top: -1.2rem;
+	left: -1.2rem;
+    z-index: 1;
+}
+.designWrap i {
+    width: 30rem;
+    height: 30rem;
+    border: .4rem solid white;
+    border-radius: 15rem;
+
+    padding: 10rem;
+    box-sizing: border-box;
+
+    font-size: 10rem;
+	color: white;
+
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.designWrap .step {
+    width: 40rem;
+
+    color: white;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .6);
+}
+.designWrap .step h1 {
+    font-size: 1.8rem;
+}
+.designWrap .step p {
+    margin-top: .6rem;
+
+    font-size: 1.6rem;
+}
+.designWrap .one {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+.designWrap .two {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+.designWrap .three {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+}
+.designWrap .four {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+/* ------------ 仿pinterest風格 ------------ */
+.pinterestWrap {
+    width: 82%;
+    height: auto;
+
+    margin: 5rem auto 0;
+
+    position: relative;
+}
+.pinterestWrap::before {
+    content: attr(pinterestTitle);
+
+    -webkit-text-stroke: .2rem black;
+    text-shadow: .12rem .12rem 0 white;
+    color: transparent;
+
+    font-size: 4rem;
+	font-weight: 900;
+    font-style: italic;
+
+    position: absolute;
+	top: -1.2rem;
+	left: -1.2rem;
+    z-index: 1;
+}
+ul.pinterest {
+    column-count: 3;
+}
+ul.pinterest li {
+    break-inside: avoid;
+}
+ul.pinterest li img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4rem;
+}
+ul.pinterest li:hover img {
+    -webkit-filter: drop-shadow(.8rem .8rem 1rem black);             /* Safari */
+    filter: drop-shadow(.8rem .8rem 1rem black);
+}
+ul.pinterest li p {
+    margin: .7rem 0 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* ------------ 顧客評價 ------------ */
+.container{
+    width:60%;
+    min-height: 30rem;
+    margin:3rem auto 0;
+
+    position:relative;
+
+    border: .6rem dashed var(--secondary-color);
+}
+input {
+    display: none;
+}
+label img {
+    display: block;
+    width: 10rem;
+    border-radius: 5rem;
+}
+label{
+    display:block;
+    width:33%;
+    
+    position:absolute;
+    left: 0;
+    bottom:0;
+
+    cursor: pointer;
+}
+label.second{
+    left: 33%;
+}
+label.third{
+    left: 66%;
+}
+.slide{
+    width: 100%;
+
+    position:absolute;
+    left:-100%;
+
+    opacity:0;
+
+    transition: all 0.6s ease-in;
+}
+blockquote{
+    background-color: var(--primary-color);;
+    width:100%;
+    height: 15rem;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    font-size: 3rem;
+    color:white;
+}
+#first:checked ~ div.one {
+    left:0;
+    opacity:1;
+}
+#secend:checked ~ div.two {
+    left:0;
+    opacity:1;
+}
+#third:checked ~ div.three {
+    left:0;
+    opacity:1;
+}
+  
