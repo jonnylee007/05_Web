@@ -55,7 +55,7 @@
 	transform: translateY(-50%);
 }
 .slider-dots .slider-dot {
-	background-color: var(--primary-color);;
+	background-color: var(--primary-color);
 	display: block;
 	width: 2rem;
 	height: 2rem;
@@ -77,7 +77,6 @@ div.slider-dots span.slider-dot.active {
 	align-items: flex-start;
 }
 h1.sectionCate {
-	/* background-color: var(--secondary-color);; */
 	background-image: linear-gradient(to right, rgb(0, 0, 0, 0) 26%, var(--secondary-color) 70%, rgb(0, 0, 0, 0) 80%);
 	display: block;
 	width: 5%;
@@ -86,7 +85,7 @@ h1.sectionCate {
 	font-weight: bolder;
 }
 div.sectionSmallWrap {
-	width: 94%;
+	/* width: 94%; */
 	
 	display: flex;
 	align-items: center;
@@ -120,4 +119,3 @@ div.sectionSmallWrap div.sectionItem p {
 	font-weight: bold;
 	text-align: center;
 }
-
