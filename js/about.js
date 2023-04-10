@@ -1,32 +1,29 @@
-// 取得所有時序線中的content元素
-const contents = document.querySelectorAll('.timelineWrap .content');
+// ============ Timeline ============
+// Step1: 取得所有時序線中的content元素
+const contents = document.querySelectorAll('.content');
 
-// 設定每個content元素的動畫效果
+// Step2: 設定 content 的動畫效果
 contents.forEach((content, index) => {
-  // 檢查content元素中是否有h1和p元素，如果沒有就直接返回
-  const hasHeading = content.querySelector('h1') !== null;
-  const hasParagraph = content.querySelector('p') !== null;
   
-  if (!hasHeading || !hasParagraph) {
+  // Step2-1: 檢查content，如果沒有 h1 則直接返回，不加動畫
+  if (content.querySelector('h1') == null) {
     return;
   }
-  
-  // 設定延遲時間
-  const delay = index * 200;
-  
-  // 設定動畫效果
+
+  // Step2-2: 設定動畫效果
   content.style.opacity = 0;
   content.style.transform = 'translateX(-50px)';
+  const delay = index * 200;
   content.style.transition = `all 0.5s ease ${delay}ms`;
   
-  // 偵聽視窗滾動事件，檢查content元素是否出現在視窗中
+  // Step3: 設置scroll事件監聽器
   window.addEventListener('scroll', () => {
     const top = content.getBoundingClientRect().top;
     const bottom = content.getBoundingClientRect().bottom;
-    const isVisible = (top >= 0 && bottom <= window.innerHeight);
-    
-    // 如果content元素出現在視窗中，就套用動畫效果
-    if (isVisible) {
+    // console.log("top: " + top + "bottom: " + bottom + "window.innerHeight: " + window.innerHeight);
+
+    // 當content元素出現在視窗，則套用動畫效果
+    if (top >= 0 && bottom <= window.innerHeight) {
       content.style.opacity = 1;
       content.style.transform = 'translateX(0)';
     }

@@ -177,6 +177,21 @@ footer div.col-3 div.social-icons i{
 	border-radius: 2rem;
 }
 
+
+/* ------------ 彩蛋 ------------ */
+img.richard {
+	display: block;
+	width: 45%;
+	border-radius: 50%;
+	position: fixed;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+}
+img.hidden {
+	display: none;
+}
+
 @media screen and (max-width: 414px) {
 	/* ------------ nav導覽列 ------------ */
 	/* 基本設定 */
