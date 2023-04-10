@@ -46,11 +46,12 @@ dotsArr.forEach((dot, index) => {
 
 
 // ============ section ============
+// 結果好像不用這一段js也可以跑...
 // Step1: 取得 sectionSmallWrap
-const container = document.querySelector('.sectionSmallWrap');
-let isDown = false;
-let startX;
-let scrollLeft;
+// const container = document.querySelector('.sectionSmallWrap');
+// let isDown = false;
+// let startX;
+// let scrollLeft;
 
 // Step2: 
 // container.addEventListener('mousedown', (e) => {
