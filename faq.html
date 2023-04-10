@@ -61,7 +61,7 @@
 
 		<!------------ Question ------------>
 		<div class="questionWrap QQ1">
-			<h1>產品相關</h1>
+			<h1>產品相關(html5)</h1>
 			<details open>
 				<summary>有產品品質保證嗎？</summary>
 				<div class="tab-content">
@@ -81,26 +81,29 @@
 				</div>
 			</details>
 		</div>
-		<div class="questionWrap QQ2">
-			<h1>交易相關</h1>
-			<details>
-				<summary>付款方式</summary>
-				<div class="tab-content">
+
+		<div class="accordion QQ2">
+			<h1>交易相關(jQuery)</h1>
+			<div class="accordion-item">
+				<h3 class="accordion-header">付款方式</h3>
+				<div class="accordion-content">
 					<p>ATM轉帳<br>信用卡，經由綠界<br>黑貓貨到付款</p>
 				</div>
-			</details>		  
-			<details open>
-				<summary>配送</summary>
-				<div class="tab-content">
+			</div>
+	
+			<div class="accordion-item">
+				<h3 class="accordion-header">配送</h3>
+				<div class="accordion-content">
 					<p>此商品可配送離島區域，您可於結帳時，選擇離島地址配送。<br>商品之實際配貨日期、退換貨日期，依我們向您另行通知之內容為準。<br>	標示『安心配』商品類別，將有專人與您約定送貨時間(可約定出貨日30天內日期)。※若為預購商品，以下單日網頁公告之配送日期，於一個工作天內（不含例假日）與您約定送貨時間。</p>
 				</div>
-			</details>			
-			<details>
-				<summary>退換貨</summary>
-				<div class="tab-content">
+			</div>
+	
+			<div class="accordion-item">
+				<h3 class="accordion-header">退換貨</h3>
+				<div class="accordion-content">
 					<p>辦理退貨商品必須是全新狀態且包裝完整，商品一經拆封，等同商品價值已受損，僅能以福利品出售，若需退換貨，我方須收取價值損失之費用(回復原狀、整新費)，請先確認商品正確、外觀可接受，再行開機/使用，以免影響您的權利，祝您購物順心。各類商品退換貨限制說明<br>敝司出貨已全程攝影，為保障您購物權益，開箱過程請全程錄影；如有問題請反映客服並提供錄影檔案，祝您購物愉快。</p>
 				</div>
-			</details>
+			</div>
 		</div>
 
 
@@ -140,5 +143,6 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/common.js"></script>
+	<script src="./js/faq.js"></script>
 </body>
 </html>
