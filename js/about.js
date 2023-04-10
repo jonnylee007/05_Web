@@ -12,7 +12,7 @@ contents.forEach((content, index) => {
   }
   
   // 設定延遲時間
-  const delay = index * 400;
+  const delay = index * 200;
   
   // 設定動畫效果
   content.style.opacity = 0;
