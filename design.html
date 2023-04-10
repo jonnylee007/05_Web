@@ -16,41 +16,44 @@
 	<div class="wrapper">
 
 		<!------------ nav導覽列 ------------>
-		<nav class = "navigation">
-			<img src="images/logo.jpg" alt="#">
-			
-			<ul>
-				<li class = "list">
+		<nav class = "menu">
+
+			<div class="container">
+				<div class="toggle"></div>
+			</div>
+
+			<img src="images/logo.jpg" alt="#">			
+			<ul class="menu-list">
+				<li class = "list hidden">
 					<a href = "index.html" data-en="Home">
-						<span class="navEmphasis">首頁</span>
+						<span class="navEmphas">首頁</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "about.html" data-en="About">
 						<span class="navItem">關於我們</span>
 					</a>
 				</li>
-				<li class = "list active">
+				<li class = "list hidden">
 					<a href = "design.html" data-en="Design">
 						<span class="navItem">景觀設計</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "product.html" data-en="Product">
 						<span class="navItem">商品列表</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "faq.html" data-en="FAQ">
 						<span class="navItem">常見問題</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "contact.html" data-en="Contact">
 						<span class="navItem">聯絡我們</span>
 					</a>
 				</li>
-				
 			</ul>
 		</nav>
 
@@ -187,5 +190,8 @@
 		</footer>
 	</div>
 	
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 </html>

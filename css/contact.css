@@ -93,4 +93,66 @@
 }
 
 
+/* RWD */
+@media screen and (max-width: 414px) {
+  .mapWrap {
+    /* width: 53.25%;
+    margin: 3rem auto 0;
+    filter: drop-shadow(20px 20px 2px #333); */
 
+  }
+
+  
+  /* ------------ contact ------------ */
+  .contactWrap {
+    display: block;
+    font-size: 6rem;
+    font-weight: bold;
+    width: 60%;
+  }
+  .contactWrap h1 {
+    margin: 2rem 0;
+    font-size: 7rem;
+  }
+  .contactWrap .contactLeft {
+    width: auto;
+    filter: none;
+    border: .5rem solid lightgray;
+  }
+  .contactWrap .contactLeft input {
+    height: 6rem;
+    font-size: 6rem;
+  }
+  .contactWrap .contactLeft textarea {
+    height: 18rem;
+    font-size: 6rem;
+  }
+  .contactWrap .contactLeft input[type=submit] {
+    height: 10rem;
+  }
+
+  .contactWrap .contactRight {
+    width: auto;
+    filter: none;
+    border: .5rem solid lightgray;
+    margin-top: 2rem;
+  }
+  .contactWrap .contactRight li {
+    font-weight: normal;
+  }
+  .contactWrap .contactRight li .up {
+    font-size: 6rem;
+    width: 6rem;
+  }
+  .contactWrap .contactRight li span {
+    display: none;
+  }
+  .contactWrap .contactRight .contactIcons {
+    justify-content:left;
+  }
+  .contactWrap .contactRight li .down {
+    font-size: 8rem;
+  }
+  .contactWrap .contactRight .contactIcons li:hover .down {
+  }
+}

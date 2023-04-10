@@ -16,41 +16,44 @@
 	<div class="wrapper">
 
 		<!------------ nav導覽列 ------------>
-		<nav class = "navigation">
-			<img src="images/logo.jpg" alt="#">
-			
-			<ul>
-				<li class = "list">
+		<nav class = "menu">
+
+			<div class="container">
+				<div class="toggle"></div>
+			</div>
+
+			<img src="images/logo.jpg" alt="#">			
+			<ul class="menu-list">
+				<li class = "list hidden">
 					<a href = "index.html" data-en="Home">
-						<span class="navEmphasis">首頁</span>
+						<span class="navEmphas">首頁</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "about.html" data-en="About">
 						<span class="navItem">關於我們</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "design.html" data-en="Design">
 						<span class="navItem">景觀設計</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "product.html" data-en="Product">
 						<span class="navItem">商品列表</span>
 					</a>
 				</li>
-				<li class = "list active">
+				<li class = "list hidden">
 					<a href = "faq.html" data-en="FAQ">
 						<span class="navItem">常見問題</span>
 					</a>
 				</li>
-				<li class = "list">
+				<li class = "list hidden">
 					<a href = "contact.html" data-en="Contact">
 						<span class="navItem">聯絡我們</span>
 					</a>
 				</li>
-				
 			</ul>
 		</nav>
 
@@ -78,13 +81,13 @@
 		</div>
 		<div class="questionWrap QQ2">
 			<h1>交易相關</h1>
-			<details open>
+			<details>
 				<summary>付款方式</summary>
 				<div class="tab-content">
 					<p>ATM轉帳<br>信用卡，經由綠界<br>黑貓貨到付款</p>
 				</div>
 			</details>		  
-			<details>
+			<details open>
 				<summary>配送</summary>
 				<div class="tab-content">
 					<p>此商品可配送離島區域，您可於結帳時，選擇離島地址配送。<br>商品之實際配貨日期、退換貨日期，依我們向您另行通知之內容為準。<br>	標示『安心配』商品類別，將有專人與您約定送貨時間(可約定出貨日30天內日期)。※若為預購商品，以下單日網頁公告之配送日期，於一個工作天內（不含例假日）與您約定送貨時間。</p>
@@ -132,5 +135,8 @@
 		</footer>
 	</div>
 
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 </html>

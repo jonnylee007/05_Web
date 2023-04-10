@@ -227,6 +227,136 @@
 
 
 
+/* RWD */
+@media screen and (max-width: 414px) {
+    /* ------------ 關於 ------------ */
+    .gridWrap {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+    .gridWrap div.grid001 {   
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    .gridWrap h1.grid002 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        font-size: 8rem;
+
+        padding-left: 3rem;
+    }
+    .gridWrap h1.grid002::before {
+        width: 3rem;
+        height: 8rem;
+    }
+    .gridWrap p.grid003 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        font-size: 6rem;
+        line-height: 1.2;
+    }
+    .gridWrap p.grid003::first-letter {
+        float: none;
+        font-size: 6rem;
+        font-weight: normal;
+    }
+    .gridWrap img.grid004 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        border-radius: 0;
+    }
+    .gridWrap h1.grid005 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+
+        font-size: 8rem;
+
+        padding-left: 3rem;
+    }
+    .gridWrap h1.grid005::before {
+        width: 3rem;
+        height: 8rem;
+    }
+    .gridWrap p.grid006 {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+
+        font-size: 6rem;
+        line-height: 1.2;
+    }
+    .gridWrap p.grid006::first-letter {
+        float: none;
+        font-size: 6rem;
+        font-weight: normal;
+    }
+    .gridWrap img.grid007 {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+        border-radius: 0;
+    }
+    .gridWrap div.grid008 {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+    .gridWrap img {
+        width: 100%;
+    }
+
+
+
+    /* ------------ Timeline ------------ */
+    .timelineWrap {
+        --timelineWrap-width: 90%;
+        width: var(--timelineWrap-width);
+        display: block;
+    }
+    .timelineWrap::after {
+        left: 0;
+        margin-left: 7rem;
+    }
+    .timelineWrap .content {
+        width: calc(var(--timelineWrap-width) * 0.9);
+        margin: 3rem auto;
+    }
+    .timelineWrap div.content:nth-child(2),
+    .timelineWrap div.content:nth-child(3),
+    .timelineWrap div.content:nth-child(6),
+    .timelineWrap div.content:nth-child(7)  {
+        display: none;
+    }
+    .timelineWrap div.left {
+        border-right: 0;
+        border-left: 2rem solid var(--secondary-color);
+    }
+    .timelineWrap div.left::before {
+        border: 4rem solid ;
+        border-color: transparent var(--secondary-color) transparent transparent;
+        right: 79.7rem;  
+    }
+    .timelineWrap div.right {
+        border-left: 2rem solid var(--secondary-color);
+    }
+    .timelineWrap div.right::before {
+        border: 4rem solid ;
+        border-color: transparent var(--secondary-color) transparent transparent;
+        left: -10rem;
+    }
+    .timelineWrap .content h1 {
+        font-size: 6rem;
+    }
+    .timelineWrap .content p {
+        font-size: 4rem;
+        line-height: 1.5;
+    }
+}
+
+
+
   
 
   

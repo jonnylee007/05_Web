@@ -189,4 +189,105 @@ blockquote{
     left:0;
     opacity:1;
 }
-  
+
+
+/* RWD */
+@media screen and (max-width: 414px) {
+
+    /* ------------ 流程規劃 ------------ */
+    .designWrap {
+        width: 90%;
+    }
+    .designWrap .designTitle {
+        font-size: 7rem;
+        top: -4rem;
+        left: -4rem;
+    }
+    .designWrap i {
+        display: none;
+    }
+    .designWrap .step {
+        width: 45%;
+    }
+    .designWrap .step h1 {
+        font-size: 4.4rem;
+    }
+    .designWrap .step p {
+        margin-top: .8rem;
+        font-size: 3.4rem;
+        line-height: 1.3;
+    }
+    .designWrap .one {
+        top: 10%;
+        left: 5%;
+    }
+    .designWrap .two {
+        top: 10%;
+        left: 50%;
+    }
+    .designWrap .three {
+        top: 55%;
+        left: 5%;
+    }
+    .designWrap .four {
+        top: 55%;
+        left: 50%;
+    }
+
+
+    
+    /* ------------ 仿pinterest風格 ------------ */
+    .pinterestWrap {
+        width: 90%;
+    }
+    .pinterestWrap::before {
+        font-size: 7rem;
+        top: -4rem;
+        left: -4rem;
+    }
+    ul.pinterest {
+        column-count: 2;
+    }
+    ul.pinterest li {
+    }
+    ul.pinterest li img {
+    }
+    ul.pinterest li:hover img {
+    }
+    ul.pinterest li p {
+        font-size: 3.4rem;
+    }
+
+
+    
+    /* ------------ 顧客評價 ------------ */
+    .container{
+        width: 80%;
+        min-height: 52rem;
+    }
+    input {
+    }
+    label img {
+        width: 20rem;
+        border-radius: 10rem;
+    }
+    label{
+    }
+    label.second{
+    }
+    label.third{
+    }
+    .slide{
+    }
+    blockquote{
+        height: 30rem;
+        font-size: 6rem;
+        line-height: 1.3;
+    }
+    #first:checked ~ div.one {
+    }
+    #secend:checked ~ div.two {
+    }
+    #third:checked ~ div.three {
+    }
+}

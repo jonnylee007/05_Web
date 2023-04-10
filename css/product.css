@@ -66,3 +66,33 @@
 
 
 
+/* RWD */
+@media screen and (max-width: 414px) {
+    .wrappergrid {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .wrappergrid a.item {
+        height: 48rem;
+    }
+    .wrappergrid a.item h1.items {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .wrappergrid a.item:hover h1.items {
+    }
+    .wrappergrid a.item h1.Top span {
+    }
+    .wrappergrid a.item:hover h1.Top span {
+    }
+    .wrappergrid a.item h1.Top {
+    }
+    .wrappergrid a.item h1.Bottom {
+    }
+    .wrappergrid img {
+    }
+}
+
+
+

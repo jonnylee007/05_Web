@@ -103,6 +103,7 @@ div.sectionSmallWrap::-webkit-scrollbar {
 }
 div.sectionSmallWrap div.sectionItem {
 	width: 55%;
+	margin: 1rem;
 
     flex-shrink:0;				/* 可以超出框框 */
 }
@@ -118,4 +119,75 @@ div.sectionSmallWrap div.sectionItem p {
 	font-size: 1.8rem;
 	font-weight: bold;
 	text-align: center;
+}
+
+
+/* test */
+
+
+
+
+
+
+
+/* RWD */
+@media screen and (max-width: 414px) {
+	/* ------------ header動畫列 ------------ */
+	.slider {
+		width: 100%;
+		height: 70rem;
+		margin: 3rem 0 16rem 0;
+	}
+	.slider img {
+		width: 100%;
+		height: 100%;
+	}
+	.slider img.active {
+	}
+	.slogan {
+		left: 0;
+		font-size: 11rem;
+	}
+	.slider-dots {
+		top: 100%;
+		right: 36%;
+		transform: translateY(10%);
+		display: flex;
+	}
+	.slider-dots .slider-dot {
+		width: 5rem;
+		height: 5rem;
+		margin: 2rem 2rem;
+	}
+	div.slider-dots span.slider-dot.active {
+	}
+
+
+	/* ------------ section動畫列 ------------ */
+	.sectionBigWrap {
+		width: 100%;
+		margin: 8rem 0;
+		display: block;
+	}
+	h1.sectionCate {
+		background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0) 26%, var(--secondary-color) 70%, rgb(0, 0, 0, 0) 80%);
+		width: 34%;
+
+		font-size: 10rem;
+	}
+	div.sectionSmallWrap {
+	}
+	div.sectionSmallWrap::-webkit-scrollbar {
+	}
+	div.sectionSmallWrap div.sectionItem {
+		width: 65%;
+	}
+	div.sectionSmallWrap div.sectionItem img.sectionImg {
+		height: 40rem;
+	}
+	div.sectionSmallWrap div.sectionItem p {
+		font-size: 5rem;
+		text-align: left;
+	}
+
 }
