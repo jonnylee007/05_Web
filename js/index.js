@@ -46,31 +46,22 @@ dotsArr.forEach((dot, index) => {
 
 
 // ============ section ============
+// Step1: 取得 sectionSmallWrap
 const container = document.querySelector('.sectionSmallWrap');
 let isDown = false;
 let startX;
 let scrollLeft;
 
+// Step2: 
 container.addEventListener('mousedown', (e) => {
-  isDown = true;
-  startX = e.pageX - container.offsetLeft;
-  scrollLeft = container.scrollLeft;
-//   container.style.cursor = 'grabbing';
+    isDown = true;
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
 });
 
 container.addEventListener('mouseleave', () => {
-  isDown = false;
-//   container.style.cursor = 'grab';
+    isDown = false;
 });
 container.addEventListener('mouseup', () => {
-  isDown = false;
-//   container.style.cursor = 'grab';
+    isDown = false;
 });
-
-// container.addEventListener('mousemove', (e) => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.pageX - container.offsetLeft;
-//   const walk = (x - startX) * 3; // 滑動速度
-//   container.scrollLeft = scrollLeft - walk;
-// });
