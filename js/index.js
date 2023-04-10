@@ -55,23 +55,22 @@ container.addEventListener('mousedown', (e) => {
   isDown = true;
   startX = e.pageX - container.offsetLeft;
   scrollLeft = container.scrollLeft;
-  container.style.cursor = 'grabbing';
+//   container.style.cursor = 'grabbing';
 });
 
 container.addEventListener('mouseleave', () => {
   isDown = false;
-  container.style.cursor = 'grab';
+//   container.style.cursor = 'grab';
 });
-
 container.addEventListener('mouseup', () => {
   isDown = false;
-  container.style.cursor = 'grab';
+//   container.style.cursor = 'grab';
 });
 
-container.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - container.offsetLeft;
-  const walk = (x - startX) * 3; // 滑動速度
-  container.scrollLeft = scrollLeft - walk;
-});
+// container.addEventListener('mousemove', (e) => {
+//   if (!isDown) return;
+//   e.preventDefault();
+//   const x = e.pageX - container.offsetLeft;
+//   const walk = (x - startX) * 3; // 滑動速度
+//   container.scrollLeft = scrollLeft - walk;
+// });
