@@ -17,6 +17,24 @@ body {
 	/* border: 2px solid red; */
 }
 
+/* ------------ mouse trailer ------------ */
+#trailer {
+	width: 2rem;
+	height: 2rem;
+	background-color: black;
+	border-radius: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 500ms ease;
+}
+body:hover  #trailer {
+	opacity: 1;
+}
+
 /* ------------ nav導覽列 ------------ */
 nav {
 	width: 82%;
