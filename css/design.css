@@ -124,7 +124,7 @@ ul.pinterest li p {
 }
 
 /* ------------ 顧客評價 ------------ */
-.container{
+.customerWrap {
     width:60%;
     min-height: 30rem;
     margin:3rem auto 0;
@@ -261,7 +261,7 @@ blockquote{
 
     
     /* ------------ 顧客評價 ------------ */
-    .container{
+    .customerWrap{
         width: 80%;
         min-height: 52rem;
     }
