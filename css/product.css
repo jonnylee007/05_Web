@@ -8,6 +8,7 @@
 }
 .wrappergrid a.item {
     display: block;
+    color: black;
     outline: 1px solid black;
     height: 32rem; 
     overflow: hidden;

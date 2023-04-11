@@ -114,8 +114,8 @@ ul.pinterest li img {
     border-radius: 4rem;
 }
 ul.pinterest li:hover img {
-    -webkit-filter: drop-shadow(.8rem .8rem 1rem black);             /* Safari */
-    filter: drop-shadow(.8rem .8rem 1rem black);
+    -webkit-filter: drop-shadow(.6rem .6rem .1rem black);             /* Safari */
+    filter: drop-shadow(.6rem .6rem .1rem black);
 }
 ul.pinterest li p {
     margin: .7rem 0 2rem 0;
@@ -127,11 +127,29 @@ ul.pinterest li p {
 .customerWrap {
     width:60%;
     min-height: 30rem;
-    margin:3rem auto 0;
+    margin:6rem auto 0;
 
     position:relative;
 
     border: .6rem dashed var(--secondary-color);
+}
+.customerWrap::before {
+    content: attr(customerTitle);
+
+    -webkit-text-stroke: .2rem black;
+    text-shadow: .12rem .12rem 0 white;
+    color: transparent;
+
+    font-size: 4rem;
+	font-weight: 900;
+    font-style: italic;
+
+    position: absolute;
+	/* top: -1.2rem; */
+    top: -5rem;
+    /* top: -105rem; */
+	left: -14.5rem;
+    z-index: 1;
 }
 input {
     display: none;
@@ -239,7 +257,7 @@ blockquote{
     /* ------------ 仿pinterest風格 ------------ */
     .pinterestWrap {
         width: 90%;
-    }
+    }    
     .pinterestWrap::before {
         font-size: 7rem;
         top: -4rem;
@@ -265,6 +283,12 @@ blockquote{
         width: 80%;
         min-height: 52rem;
     }
+    .customerWrap::before {
+        font-size: 7rem;
+        top: -8rem;
+        left: -10rem;
+    }
+    
     input {
     }
     label img {

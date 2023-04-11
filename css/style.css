@@ -50,36 +50,25 @@ nav {
 nav img {
 	display: block;
 	width: 4rem;
-	margin-left: 2rem;
+	margin: .4rem;
 
 	float: left
 }
 
 nav ul {
-	/* flex-basis: 68%; */
 	width:68%;
 	height: 6rem;
-
-	/* display: flex;
-	align-items: center;
-    justify-content: center; */
-
-	margin-right: 2rem;
 
 	float: right;
 }
 nav ul li {
-	line-height: 2rem;
-
-	/* flex-grow: 1;
-	flex-shrink:1; */
+	line-height: 2.4rem;
 
 	float: left;
 
-	margin-right: 1rem;
+	margin-right: 2.3rem;
 	
 	list-style: none;
-	/* overflow: hidden; */
 }
 nav ul li a {
 	display: block;
@@ -240,13 +229,13 @@ img.hidden {
 	.menu ul {
 		clear: both;
     	position: absolute;
-    	right: -25px;
     	top: 130px;
     	width: 100%;
 
 		z-index: 99;		
 	}
 	.menu li {
+		margin-right: 0;
 		float: none;
     	clear: both;
 		background-color: #fff;
