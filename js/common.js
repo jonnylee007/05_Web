@@ -1,14 +1,17 @@
 // ============ mouse trailer ============
+// Step1: 取得trailer
 const trailer = document.getElementById("trailer");
 
+// Step2: 設置mousemove事件
 window.onmousemove = e => {
+    // Step2-1: 取得滑鼠當下的x座標和y座標
     const x = e.clientX - trailer.offsetWidth / 2;
     const y = e.clientY - trailer.offsetHeight / 2;
 
+    // Step2-2: 設置trailer動畫
     const keyframes = {
         transform: `translate(${x}px, ${y}px)`
     }
-
     trailer.animate(keyframes, {
         duration: 800,
         fill: "forwards"

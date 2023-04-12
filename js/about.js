@@ -20,7 +20,7 @@ contents.forEach((content, index) => {
   window.addEventListener('scroll', () => {
     const top = content.getBoundingClientRect().top;
     const bottom = content.getBoundingClientRect().bottom;
-    // console.log("top: " + top + "bottom: " + bottom + "window.innerHeight: " + window.innerHeight);
+    console.log("top: " + top + "bottom: " + bottom + "window.innerHeight: " + window.innerHeight);
 
     // 當content元素出現在視窗，則套用動畫效果
     if (top >= 0 && bottom <= window.innerHeight) {
